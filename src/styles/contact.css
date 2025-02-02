@@ -7,7 +7,9 @@
     height: auto;
     width: auto;
     align-items: center;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
   }
  
   .contact-us-flex{
@@ -62,4 +64,80 @@
   .logo-contact{
     width: 50%;
     margin-left: 20px;    
+  }
+
+  @media (max-width: 1200px){
+
+    .contact {
+      background-color: #fcfcfc;
+      color: black;
+      height: auto;
+      width: auto;
+      margin-bottom: 0px;
+      
+      
+    }
+   
+    .contact-us-flex{
+      display: flex;
+      flex-direction: column-reverse;
+      
+    }
+
+    .contact-girl{
+      width: 50vw;
+      height: 50vh;
+      aspect-ratio: 1;
+      align-self: center;
+      
+      
+    }
+    
+    .contact-flex-right{      
+      position: relative;       
+      align-self: center;
+      padding-left: 0%;
+    }
+  
+    .contact-title{
+      font-family: 'Barlow COndensed';
+      font-size: 200%;
+      color: #5b818a;
+      margin-bottom: 50px;
+      
+    }
+  
+    .one-line{
+      font-family: "Poppins";
+      display: flex;
+      width: 5vw;
+      height: 5vw;
+      margin-bottom: 30px;
+      
+    }
+
+    .mail-logo{
+      height: inherit;
+      width: inherit;
+      flex: 0;
+    }
+  
+    .one-line-text{
+      position: relative;
+      margin-left: 5px;
+      align-self: center;
+      font-size: 2.5vw;
+      }
+  
+    .insta-logo{
+      height: inherit;
+      width: inherit;
+      flex: 0;
+    }
+    .logo-contact{
+      width: 40vw;
+      align-self: center;
+      align-items: center;
+    }
+
   }

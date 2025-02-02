@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins";
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -31,7 +31,14 @@ body {
 .navbar li {
   cursor: pointer;
 }
-
+.toggle-btn {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 .section {
   height: 100vh;
   display: flex;
@@ -41,3 +48,50 @@ body {
   
   border-bottom: 1px solid #ccc;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 8px 0;
+    padding-bottom: 0px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 5vh;
+    width: 50%;
+    background-color: rgba(62, 65, 74, 0.9);
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar li:hover {
+    color: #5b818a;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .navbar li {
+    padding: 8px 0;
+    font-size: 28px;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin-bottom: 0px;
+    top: 12px;
+    font-size: 35px;
+  }
+}
+
+
