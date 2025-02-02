@@ -1,5 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .contact {
     background-color: #fcfcfc;
     color: black;
+    height: auto;
+    width: auto;
+    align-items: center;
+    padding: 50px;
+  }
+ 
+  .contact-us-flex{
+    display: flex;
+    
+  }
+  .contact-girl{
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1;
+
   }
   
+  .contact-flex-right{
+    position: relative; 
+    padding-left: 15%;
+  }
+
+  .contact-title{
+    font-family: 'Barlow COndensed';
+    font-size: 100px;
+    color: #5b818a;
+    margin-bottom: 50px;
+    
+  }
+
+  .one-line{
+    font-family: "Poppins";
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    
+  }
+  .mail-logo{
+    width: 48px;
+    height: 48px;
+    flex: 0;
+  }
+
+  .one-line-text{
+    position: relative;
+    margin-left: 5px;
+    align-self: center;
+    }
+
+  .insta-logo{
+    width: 48px;
+    height: 48px;
+    flex: 0;
+  }
+  .logo-contact{
+    width: 50%;
+    margin-left: 20px;    
+  }

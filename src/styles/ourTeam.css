@@ -1,4 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .our-team {
     background-color:#252525;
     color: black;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.2) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(128, 128, 128, 0.2) 2px, transparent 2px);
+    background-size: 50px 50px;
+  }
+  
+  .team-header {    
+    align-items: center;
+    gap: 20px;    
+    position: relative;
+  }
+
+  .bird-banner{
+    width: 40%;
+    height: 40%;
+    flex: 0;
+    position: relative;
+    margin-right: 10%;
+    
+    
+  }
+  
+  .header-1{
+    display: flex;
+    
+  }
+
+  .team-title {
+    font-size: 120px;
+    font-weight: bold;
+    padding-right: 50px;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-family: 'Barlow Condensed';
+    flex: 1;
+    }
+  
+  .team-images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .team-image {
+    width: 150px;
+    height: auto;
+    position: relative;
+    
+  }
+  
+  .team-banner {
+    width: 70%;
+    position: relative;
+    align-self: center;
+  }
+  
+  .team-grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .team-member {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .bottom-triangle{
+    width: 110%;
+    bottom: 0;
+    margin-bottom: -5%;
+    
   }
