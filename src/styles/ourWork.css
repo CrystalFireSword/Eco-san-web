@@ -44,7 +44,7 @@
   }
   
   .work-description-1 {
-    font-size: 120%;
+    font-size: 2vw;
     color: #333;
     font-family: 'Poppins';
     
@@ -97,7 +97,7 @@
   }
 
   .work-description-1-1 {
-    font-size: 120%;
+    font-size: 2vw;;
     color: #333;
     font-family: 'Poppins';
     margin-bottom: 10px;
@@ -131,7 +131,7 @@
 
 
   .work-description-2-2 {
-    font-size: 120%;
+    font-size: 2vw;
     color: #333;
     font-family: 'Poppins';
     padding: 0;
@@ -211,7 +211,7 @@
       display: flex;
     }
     .work-description-3{
-      font-size: 120%;
+      font-size: 2vw;
       color: #333;
       font-family: 'Poppins';
       margin-bottom: 10px;
