@@ -21,7 +21,7 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  margin-top: 20vw;
+  
 }
 
 .home-text {
@@ -77,7 +77,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    
+    margin-top: 20vw;
   }
 
   .home-text {
