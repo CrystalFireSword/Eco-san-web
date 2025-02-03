@@ -6,6 +6,7 @@
   background-color: #5b818a;
   color: black;
   width: auto;
+  
   }
 
 .home-image {
@@ -20,6 +21,7 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+  margin-top: 20vw;
 }
 
 .home-text {
