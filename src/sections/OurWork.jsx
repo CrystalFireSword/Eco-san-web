@@ -17,7 +17,7 @@ const OurWork = () => {
             
               <div className="work-main">                
                 <div className="work-main-left">
-                <h3 className="work-heading">OUR WORKS</h3>
+                <h3 className="work-heading">OUR WORK</h3>
                 <p className="work-description-1">Here are some of the projects we are currently working on.</p>
                 </div>
               <img src={arrow1} alt="Work1" className="arrow-1" />

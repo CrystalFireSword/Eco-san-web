@@ -86,11 +86,10 @@
 
     .contact-girl{
       width: 50vw;
-      height: 50vh;
+      height: 60vw;
       aspect-ratio: 1;
       align-self: center;
-      
-      
+            
     }
     
     .contact-flex-right{      
@@ -104,7 +103,11 @@
       font-size: 200%;
       color: #5b818a;
       margin-bottom: 50px;
-      
+      align-self: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
     }
   
     .one-line{
@@ -113,6 +116,8 @@
       width: 5vw;
       height: 5vw;
       margin-bottom: 30px;
+      text-align: center;
+      
       
     }
 

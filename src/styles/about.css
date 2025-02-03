@@ -4,10 +4,10 @@
 
 .about {
   background-color: #fcfcfc;
-  padding: 3vh;
+  padding: 3vw;
   position: relative;
   height: auto;
-  
+  width: auto;
   
 }
 .about-image2 {  
@@ -108,13 +108,13 @@
   }
 
   .about-description-1 {
-    font-size: 120%;
+    font-size: 4vw;
     text-align: center;
     margin: 0 20px 20px 20px;
   }
 
   .about-description-2 {
-    font-size: 120%;
+    font-size: 4vw;
     text-align: center;
     width: 80%;
     margin: 0 auto 20px auto;
@@ -135,11 +135,12 @@
 @media screen and (max-width: 768px) {
   .about-heading {
     font-size: 3.5rem;
+    margin-bottom: 2vh;
   }
 
   .about-description-1,
   .about-description-2 {
-    font-size: 100%;
+    font-size: 4vw;
     width: 90%;
   }
 
