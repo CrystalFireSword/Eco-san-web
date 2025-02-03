@@ -114,9 +114,9 @@
 
   .transition-image {
     position: absolute;
-    bottom: -20px;
+    bottom: -1.5rem;
     right:1vw;  
-    width: 25vw;
+    width: 0px; 
   }
   .home-image {
     position: relative;
