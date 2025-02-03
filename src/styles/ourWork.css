@@ -412,7 +412,8 @@
         width: 50vw;
         align-self: center;    
         flex:1;
-        margin-top: 20px;   
+        margin-top: 0px;
+        
       }
       
       .work-bottom-3{
@@ -488,7 +489,8 @@
           align-self: right;
           height: auto;
           flex:0;
-          margin-top: 50px;
+          margin-top: 5vw;
+          margin-bottom: 5vw;
           margin-right: 0px;
           position: relative;    
         }
