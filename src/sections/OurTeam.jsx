@@ -11,6 +11,7 @@ import member3 from "../assets/member3.png";
 import member4 from "../assets/member4.png";
 import member5 from "../assets/member5.png";
 import member6 from "../assets/member6.png";
+import member7 from "../assets/member7.png";
 
 const OurTeam = () => {
   return (
@@ -31,6 +32,7 @@ const OurTeam = () => {
         <img src={member4} alt="Member 4" className="team-member" />
         <img src={member5} alt="Member 5" className="team-member" />
         <img src={member6} alt="Member 6" className="team-member" />
+        <img src={member7} alt="Member 7" className="team-member" />
       </div>
       </div>
       <img src={bottomTriangle} alt="Bottom Triangle" className="bottom-triangle"/>
