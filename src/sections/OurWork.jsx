@@ -28,8 +28,8 @@ const OurWork = () => {
                 <div className="work-description-1-left">               
                 
                 <h3 className="work-description-1-button"> WORKSHOP</h3>
-                <h3 className="work-description-1-title"> Moumali</h3>
-                <p className="work-description-1-1">‘Moumali’ is a subdivision of Project Ecosanitation dedicated to educating teenage girls about the importance of menstrual hygiene. </p>
+        
+                <p className="work-description-1-1">Project Ecosanitation is dedicated to educating teenage girls about the importance of menstrual hygiene. </p>
                 </div>
                 
               <img src={workImage1} alt="Work1" className="work-image-1" />
