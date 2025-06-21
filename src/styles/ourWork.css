@@ -24,7 +24,7 @@
 
   .work-heading {
     color: #000000;
-    font-size: 9rem;
+    font-size: 7rem;
     margin-top: -5px;
     font-family: 'Barlow Condensed';
     margin-bottom: 10px;
@@ -44,14 +44,70 @@
   }
   
   .work-description-1 {
-    font-size: 2vw;
+    font-size: 1.4vw;
     color: #333;
     font-family: 'Poppins';
-    
     text-align: left;
     position: relative;
     font-weight: 300;
     
+  }
+
+  /* New Workshop Section Styles */
+  .work-workshop-section {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .work-images-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .work-image-item {
+    flex: 1 1 0;
+    max-width: 320px;
+    min-width: 0;
+  }
+
+  .work-image-hover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .work-image-item:hover .work-image-hover {
+    transform: scale(1.05);
+  }
+
+  .work-image-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #ff96aa, #fedae4);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+  }
+
+  .work-image-item:hover .work-image-overlay {
+    bottom: 0;
+  }
+
+  .work-image-overlay p {
+    font-family: 'Poppins';
+    font-size: 0.95em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #333;
   }
   
   .work-bottom-1{
@@ -65,11 +121,6 @@
   }
 
   .work-description-1-button{
-  border-bottom-left-radius:20% 60%;
-  border-bottom-right-radius: 20% 60%;
-  border-top-left-radius: 20% 60%;
-  border-top-right-radius: 20% 60%;
-    
     font-size:100%;
     color: #000000;
     
@@ -85,7 +136,7 @@
   }
 
   .work-description-1-title {
-    font-size: 300%;
+    font-size: 250%;
     color: #333;
     font-family: 'Poppins';
     margin-bottom: -20px;
@@ -97,7 +148,7 @@
   }
 
   .work-description-1-1 {
-    font-size: 2vw;;
+    font-size: 1.2vw;
     color: #333;
     font-family: 'Poppins';
     margin-bottom: 10px;
@@ -108,9 +159,9 @@
   }
   
   .work-image-1 {
-    width: 40%;
+    width: 35%;
     align-self: center;
-    height: 40%;
+    height: 35%;
     flex:0;
     margin-top: 20px;
     
@@ -131,7 +182,7 @@
 
 
   .work-description-2-2 {
-    font-size: 2vw;
+    font-size: 1.2vw;
     color: #333;
     font-family: 'Poppins';
     padding: 0;
@@ -145,8 +196,8 @@
   }
   
   .work-image-2 {
-    width: 90%;
-    height: 80%;
+    width: 85%;
+    height: 75%;
     align-self: right; 
     flex:0;
     margin-left: 0vw;
@@ -163,10 +214,6 @@
   }
     
   .work-description-3-button{
-    border-bottom-left-radius:20% 60%;
-    border-bottom-right-radius: 20% 60%;
-    border-top-left-radius: 20% 60%;
-    border-top-right-radius: 20% 60%;
     text-anchor: middle;  
     margin: auto;
     font-size:100%;
@@ -186,18 +233,18 @@
     }
 
     .work-description-3-title {
-      font-size: 300%;
+      font-size: 250%;
       color: #333;
       font-family: 'Poppins';
-      margin-bottom: -20px;
-      margin-top: -10px;
+      margin-bottom: 20px;
+      margin-top: 10px;
              
       font-weight: 450;
       
     }
   
     .work-description-3-sub-title{
-      font-size: 250%;
+      font-size: 150%;
       color: #333;
       font-family: 'Poppins';
       margin-bottom: 10px;
@@ -211,7 +258,7 @@
       display: flex;
     }
     .work-description-3{
-      font-size: 2vw;
+      font-size: 1.2vw;
       color: #333;
       font-family: 'Poppins';
       margin-bottom: 10px;
@@ -224,7 +271,7 @@
       
     }
     .work-image-3 {
-      width: 25%;
+      width: 22%;
       align-self: center;
       padding-right: 10vw;
       padding-left: 10vw;
@@ -288,7 +335,7 @@
     
       .work-heading {
         color: #000000;
-        font-size: 10vw;
+        font-size: 8vw;
         margin-top: -5px;
         font-family: 'Barlow Condensed';
         margin-bottom: 10px;
@@ -307,13 +354,13 @@
       }
       
       .work-description-1 {
-        font-size: 4vw;
+        font-size: 2.3vw;
         color: #333;
         font-family: 'Poppins';
-        margin-bottom: 10px;
+        margin-bottom: 4px;
         text-align: center;
-        position: relative;
-        font-weight: 300;
+        width: 100%;
+        font-weight: 300;  
         
       }
       
@@ -330,10 +377,6 @@
       }
     
       .work-description-1-button{
-      border-bottom-left-radius:20% 60%;
-      border-bottom-right-radius: 20% 60%;
-      border-top-left-radius: 20% 60%;
-      border-top-right-radius: 20% 60%;
         margin-top: 30px;
         font-size:100%;
         color: #000000;
@@ -351,7 +394,7 @@
       }
     
       .work-description-1-title {
-        font-size: 5vw;
+        font-size: 4vw;
         color: #333;
         font-family: 'Poppins';
         margin-bottom: -20px;
@@ -365,7 +408,7 @@
       }
     
       .work-description-1-1 {
-        font-size: 4vw;
+        font-size: 3.5vw;
         color: #333;
         font-family: 'Poppins';
         margin-bottom: 10px;
@@ -376,9 +419,9 @@
       }
       
       .work-image-1 {
-        width: 50vw;
+        width: 45vw;
         align-self: center;
-        height: 45%;
+        height: 40%;
         margin-left: auto;
         margin-right: auto;
         flex:0;
@@ -401,7 +444,7 @@
     
     
       .work-description-2-2 {
-        font-size: 4vw;
+        font-size: 3.5vw;
         color: #333;
         font-family: 'Poppins';
         margin-bottom: 10px;
@@ -415,7 +458,7 @@
       }
       
       .work-image-2 {
-        width: 50vw;
+        width: 45vw;
         align-self: center;    
         flex:1;
         margin-top: 0px;
@@ -452,11 +495,11 @@
         }
     
         .work-description-3-title {
-          font-size: 9vw;
+          font-size: 7vw;
           color: #333;
           font-family: 'Poppins';
           margin-bottom: 20px;
-          margin-top: -10px;
+          margin-top: -20px;
           margin-left: auto;
           margin-right: auto;
           font-weight: 450;
@@ -464,7 +507,7 @@
         }
       
         .work-description-3-sub-title{
-          font-size: 7vw;
+          font-size: 5vw;
           color: #333;
           font-family: 'Poppins';
           margin-bottom: 10px;
@@ -480,7 +523,7 @@
           align-items: center;
         }
         .work-description-3{
-          font-size: 4vw;
+          font-size: 3.5vw;
           color: #333;
           font-family: 'Poppins';
           margin-bottom: 10px;
@@ -491,7 +534,7 @@
           padding-right: 0px;
         }
         .work-image-3 {
-          width: 90%;
+          width: 85%;
           align-self: right;
           height: auto;
           flex:0;
@@ -530,3 +573,384 @@
           
          }
      }
+     /* Responsive styles for workshop section */
+     .work-workshop-section {
+       margin: 30px 0;
+       text-align: center;
+     }
+
+     @media screen and (min-width: 900px) {
+       .work-images-container {
+         display: flex;
+         flex-direction: row;
+         gap: 32px;
+         justify-content: center;
+         align-items: flex-start;
+       }
+       .work-image-item {
+         flex: 1 1 0;
+         max-width: 320px;
+       }
+     }
+
+     /* Default: stack vertically on small screens */
+     .work-images-container {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+     }
+     .work-image-item {
+       width: 100%;
+       max-width: 340px;
+     }
+
+     .work-image-hover {
+       height: 200px;
+     }
+
+     .work-image-overlay {
+       padding: 15px;
+     }
+
+     .work-image-overlay p {
+       font-size: 12px;
+     }
+
+/* Generic container for image + hover text */
+.work-hover-block {
+  position: relative;
+  width: 40%;
+  max-width: 500px;
+  margin: 2rem auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.work-hover-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+  
+}
+
+.work-hover-block:hover img {
+  transform: scale(1.05);
+}
+
+.work-hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  opacity: 0;
+  font-size: 1.1rem;
+  transition: opacity 0.4s ease;
+}
+
+.work-hover-block:hover .work-hover-text {
+  opacity: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .work-hover-block {
+    width: 90%;
+  }
+
+  .work-hover-text {
+    font-size: 4vw;
+    padding: 1rem;
+  }
+  .work-bottom-3 .work-hover-text {
+  position: absolute;
+  color: #333;
+  font-family: 'Poppins';
+  font-size: 0.5rem;
+  text-align: justify;
+  overflow-y: auto;
+  width: 85%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+}
+
+/* Container to hold the two image blocks side by side or stacked */
+.work-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 3vw;
+  flex-direction: row; /* Default is horizontal */
+}
+
+/* Hover block style (already exists, just reference here) */
+.work-hover-block {
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.work-hover-block img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-hover-block:hover img {
+  transform: scale(1.05);
+}
+
+.work-hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  background: rgba(254, 218, 228, 0.9);
+  color: #000;
+  padding: 1rem;
+  font-family: 'Poppins';
+  font-size: 1.1rem;
+  font-weight: 300;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  text-align: center;
+}
+
+.work-hover-block:hover .work-hover-text {
+  transform: translateY(0);
+}
+
+/* Stack vertically on portrait screens or narrow windows */
+@media screen and (max-aspect-ratio: 1/1) {
+  .work-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-hover-block {
+    width: 90%;
+
+  }
+  
+}
+
+.work-bottom-3 .work-hover-block {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: unset; /* Let it grow vertically */
+}
+
+.work-bottom-3 .work-hover-block img {
+  height: 50vh;
+  object-fit: contain; /* Ensures full image is shown */
+  display: block;
+  aspect-ratio: 1;
+}
+
+.work-bottom-3 .work-hover-text {
+  position: absolute;
+  color: #333;
+  font-family: 'Poppins';
+  font-size: 70%;
+  text-align: justify;
+  overflow-y: auto;
+  width: 85%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-bottom-3 .work-hover-block:hover .work-hover-text {
+  opacity: 1;
+}
+
+.process-image {
+  width: 50px;
+  height: 50px;
+}
+
+.our-process-image-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.our-process-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-zoom-in {
+  opacity: 0;
+  animation: zoomIn 1s ease-out forwards;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.2s;
+}
+.animate-delay-2 {
+  animation-delay: 0.4s;
+}
+.animate-delay-3 {
+  animation-delay: 0.6s;
+}
+/* Responsive Typography */
+@media screen and (max-width: 1024px) {
+  .work-heading {
+    font-size: 6vw;
+  }
+
+  .work-description-1,
+  .work-description-1-1,
+  .work-description-2-2,
+  .work-description-3 {
+    font-size: 2.5vw;
+  }
+
+  .work-description-3-title {
+    font-size: 6vw;
+  }
+
+  .work-description-3-sub-title {
+    font-size: 4vw;
+  }
+
+  .work-hover-text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-heading {
+    font-size: 7vw;
+  }
+
+  .work-description-1,
+  .work-description-1-1,
+  .work-description-2-2,
+  .work-description-3 {
+    font-size: 3.1;
+  }
+
+  .work-description-3-title {
+    font-size: 7vw;
+  }
+
+  .work-description-3-sub-title {
+    font-size: 5vw;
+  }
+
+  .work-hover-text {
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work-heading {
+    font-size: 9vw;
+  }
+
+  .work-description-1,
+  .work-description-1-1,
+  .work-description-2-2,
+  .work-description-3 {
+    font-size: 3vw;
+    margin-bottom: -10x;
+  }
+  
+
+  .work-description-3-title {
+    font-size: 8vw;
+  }
+
+  .work-description-3-sub-title {
+    font-size: 6vw;
+  }
+
+  .work-hover-text {
+    font-size: 30%;
+    width: 70%;
+  }
+  .work-bottom-3 .work-hover-block:hover .work-hover-text {
+  font-size: 30%;
+  width: 70%;
+}
+.work-description-3-title{
+  margin-top: 10px;
+}
+
+}
+@media screen and (max-width: 768px) {
+  .work-flex-container {
+    gap: 1rem; /* Reduce vertical gap */
+    margin-top: 1rem; /* Less space at top */
+  }
+
+  .work-hover-block {
+    margin: 1rem 0; /* Reduce top and bottom margin */
+  }
+}
+@media screen and (max-width: 480px) {
+  .work-flex-container {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .work-description-3-title{
+    font-size: 7vw;
+  }
+  .work-hover-block {
+    margin: 0.5rem 0;
+  }
+}

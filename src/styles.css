@@ -19,13 +19,22 @@ body {
 .navbar ul {
   list-style: none;
   padding: 0;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Poppins';
   display: flex;
   justify-content: right;
   margin-right: 40px;
   gap: 30px;
-  
+}
+
+.nav-links a {
+  text-decoration: none;     /* Removes underline */
+  color: inherit;            /* Inherits color from parent, e.g., white or black */
+}
+
+
+.nav-links a:hover {
+  text-decoration: none; /* Optional: hover effect */
 }
 
 .navbar li {
@@ -81,7 +90,7 @@ body {
   }
   .navbar li {
     padding: 8px 0;
-    font-size: 28px;
+    font-size: 60%;
   }
 
   .toggle-btn {
@@ -91,6 +100,7 @@ body {
     margin-bottom: 0px;
     top: 12px;
     font-size: 35px;
+    padding-right: 10%;
   }
 }
 

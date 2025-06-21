@@ -38,7 +38,6 @@
   position: relative;
   z-index: 0;
   
-  
   }
 
 .about-bottom{
@@ -47,7 +46,7 @@
 
 .about-heading {
   color: #5b818a;
-  font-size: 9rem;
+  font-size: 7rem;
   margin-top: -5px;
   font-family: 'Barlow Condensed';
   margin-bottom: 10px;
@@ -56,21 +55,19 @@
 }
 
 .about-description-1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #333;
   font-family: 'Poppins';
   margin-bottom: 10px;
   text-align: left;
-  
 }
 
 .about-description-2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #333;
   font-family: 'Poppins';
   margin-bottom: 10px;
   text-align: left;
-  
   width: 30%;
   flex:1;
 }
@@ -109,20 +106,20 @@
   }
 
   .about-description-1 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     text-align: center;
     margin: 0 20px 20px 20px;
   }
 
   .about-description-2 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     text-align: center;
     width: 80%;
     margin: 0 auto 20px auto;
   }
 
   .about-image {
-    width: 80%;
+    width: 50%;
     margin: 20px auto;
   }
 
@@ -141,16 +138,91 @@
 
   .about-description-1,
   .about-description-2 {
-    font-size: 4vw;
+    font-size: 3vw;
     width: 90%;
   }
 
   .about-image {
-    width: 90%;
+    width: 60%;
   }
 
   .transition-image-1 {
     right: 2vw;
   width: 20vw;
   }
+}
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation Classes */
+.about-heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-description-1,
+.about-description-2 {
+  animation: fadeInUp 1.2s ease-in-out;
+  z-index: 5;
+  margin-left: 5px;
+}
+
+.about-image {
+  animation: fadeInZoom 1.3s ease-in-out;
+  
+}
+
+.about-image2 {
+  animation: floatInRight 1.5s ease-in-out;
+  
+}
+
+.about-image3 {
+  animation: floatInLeft 1.5s ease-in-out;
+  margin-left: -30px;
+}
+
+.transition-image-1 {
+  animation: fadeInZoom 1.4s ease-in-out;
 }

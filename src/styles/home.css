@@ -79,7 +79,11 @@
     align-items: center;
     margin-top: 20vw;
   }
-
+  .home-image {
+    position: absolute;
+    bottom: 12px;
+    width: 50%;
+  }
   .home-text {
     text-align: center;    
     margin: 0 20px;  
@@ -128,3 +132,57 @@
 }
 
 
+/* Animations */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageFloatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation on load */
+.home-text {
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.home-image {
+  animation: imageFloatUp 1.5s ease-out forwards;
+}
+
+/* Optional: Smooth transitions for headings */
+.big-heading,
+.medium-heading,
+.hashtag,
+.description {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.medium-heading {
+  animation-delay: 0.6s;
+}
+
+.hashtag {
+  animation-delay: 0.9s;
+}
+
+.description {
+  animation-delay: 1.2s;
+}

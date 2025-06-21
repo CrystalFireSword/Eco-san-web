@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import Section from "../components/Section";
 import "../styles/ourTeam.css";
-import teamImage from "../assets/team-image.png";
+// import teamImage from "../assets/team-image.png";
 import birdImage from "../assets/bird-image.png";
 import bottomTriangle from "../assets/bottom_triangle.png";
 import bannerImage from "../assets/banner-image.png";
