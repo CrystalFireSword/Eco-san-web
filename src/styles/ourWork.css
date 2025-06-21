@@ -947,10 +947,50 @@
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
-  .work-description-3-title{
-    font-size: 7vw;
-  }
+
   .work-hover-block {
     margin: 0.5rem 0;
+    width: 155%;              /* Make images nearly full width */
+    margin-left: 0px;
+  }
+  .work-hover-block-3 {
+    width: 80%;              /* Make images nearly full width */ 
+  }
+  
+  .work-hover-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-hover-text {
+    font-size: 4.5vw;         /* Increase text size for readability */
+    padding: 1.2rem;
+  }
+
+  .work-description-3-title {
+    font-size: 7vw;
+    margin-left: 30%;
+    align-self: center;
+    width: 100%;
+  }
+  .work-description-3-button {
+    font-size: 7vw;
+    margin-left: 50px;
+  }
+
+  .work-description-3-sub-title {
+    font-size: 5vw;
+    margin-left: 30%;
+    width: 100%;
+  }
+  .our-process-image-container{
+    width:175%;
+    margin-left: -50px;
+  }
+
+  .work-bottom-3{
+    margin-left: -100px;
+    padding-left: 50px;
+    padding-right: 30px;
   }
 }

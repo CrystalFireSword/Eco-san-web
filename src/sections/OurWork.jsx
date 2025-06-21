@@ -69,9 +69,11 @@ const OurWork = () => {
         <h4 className="work-description-3-sub-title">Coming Soon</h4>
 
         <div className="work-hover-block">
+          <div className="work-hover-block-3">
           <img src={workImage3} alt="Bio-Degradable Pads" />
           <div className="work-hover-text">
             We are creating biodegradable sanitary pads made from hemp fiber and bamboo cellulose, designed to be eco-friendly, affordable, and effective. Our goal is to reduce environmental impact while promoting sustainable living. Currently, we are in the prototyping stage at the Incubation Centre, MAHE, refining our design for maximum comfort and performance.
+          </div>
           </div>
         </div>
       </div>
