@@ -99,6 +99,7 @@
   
     .team-grid {
       grid-template-columns: repeat(2, 1fr);
+      margin-left: 10px;
     }
   
     .team-title {
@@ -107,15 +108,17 @@
       margin-left: 10%;
       text-decoration: underline #fedae4 10px;
       
-      
     }
   
-    .team-image, .team-banner {
-      width: 60%;
+    .team-banner {
+      width: 80%;
       margin: 0 auto;
     }
-
+    .team-member {
+      width: 90%;
+    }
     .bird-banner{
-      align-self: center;
+      align-self: top;
+      margin-top: 30px;
     }
   }
