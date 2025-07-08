@@ -16,12 +16,11 @@
 }
 
 .work-heading {
-    color: #000000;
-    font-size: 7rem;
-    margin: -5px 0 10px 0;
-    font-family: 'Barlow Condensed';
-    text-align: left;
-    position: relative;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #000;
 }
 
 .arrow-1 {
@@ -340,7 +339,7 @@
     }
     
     .work-heading {
-        font-size: 8vw;
+        font-size: 3rem;
         text-align: center;
     }
     
@@ -438,7 +437,7 @@
 
 @media screen and (max-width: 480px) {
     .work-heading {
-        font-size: 9vw;
+        font-size: 3rem;
     }
     
     .work-description-1,
