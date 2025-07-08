@@ -33,3 +33,18 @@
   background-color: white;
   object-fit: contain;
 }
+@keyframes flyInUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: flyInUp 1s ease-out forwards;
+}

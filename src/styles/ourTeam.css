@@ -122,3 +122,27 @@
       margin-top: 30px;
     }
   }
+
+  /* Animation */
+@keyframes flyInUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease-out;
+}
+
+.animate-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  animation: flyInUp 1s ease-out forwards;
+}
