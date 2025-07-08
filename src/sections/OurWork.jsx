@@ -69,28 +69,29 @@ const OurWork = () => {
         {/*<img src={aboutImage4} className="about-image4 scroll-fade animate-delay-3" alt="Polygon Right" />*/}
 
       {/* Heading and Carousel Side by Side */}
-      <div className="work-main-split scroll-fade animate-delay-1">
-        <div className="work-left-text">
-          <h3 className="work-heading">OUR WORK</h3>
-          <h4 className="work-sub-heading">Menstrual Hygiene Campaigns</h4>
-          <p className="work-description-1">
-            At Ecosanitation, we strive to create safe, informed, and stigma-free spaces for conversations around menstrual health.
-            Through our grassroots campaigns, we conduct interactive sessions in schools and communities, where girls and women are
-            educated on menstrual hygiene, sustainable practices, and body literacy.
-          </p>
-          <p className="work-description-1">
-            These sessions are paired with the free distribution of sanitary pads, ensuring that awareness is matched with access.
-            Our goal is to foster confidence, dignity, and health through knowledge.
-          </p>
-          <p className="work-description-1">
-            Scroll through our campaign snapshots, real moments of learning, laughter, and change.
-          </p>
-        </div>
+      <div className="work-main-split scroll-fade animate-delay-1" style={{ flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+  <div className="work-left-text">
+    <h3 className="work-heading">OUR WORK</h3>
+    <h4 className="work-sub-heading">Menstrual Hygiene Campaigns</h4>
+    <p className="work-description-1">
+      At Ecosanitation, we strive to create safe, informed, and stigma-free spaces for conversations around menstrual health.
+      Through our grassroots campaigns, we conduct interactive sessions in schools and communities, where girls and women are
+      educated on menstrual hygiene, sustainable practices, and body literacy.
+    </p>
+    <p className="work-description-1">
+      These sessions are paired with the free distribution of sanitary pads, ensuring that awareness is matched with access.
+      Our goal is to foster confidence, dignity, and health through knowledge.
+    </p>
+    <p className="work-description-1">
+      Scroll through our campaign snapshots, real moments of learning, laughter, and change.
+    </p>
+  </div>
 
-        <div className="carousel-frame scroll-fade animate-delay-2">
-          <img src={images[currentImage]} className="carousel-image" alt={`Slide ${currentImage + 1}`} />
-        </div>
-      </div>
+  <div className="carousel-frame scroll-fade animate-delay-2">
+    <img src={images[currentImage]} className="carousel-image" alt={`Slide ${currentImage + 1}`} />
+  </div>
+</div>
+
     {/* Highlight Vertical Image Separately */}
     {/* <div className="vertical-highlight-image-container scroll-fade animate-delay-2">
     <img src={workImage3} alt="Campaign Highlight" className="vertical-highlight-image" />

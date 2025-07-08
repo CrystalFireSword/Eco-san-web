@@ -132,7 +132,6 @@
     font-size: 1.2vw;
     color: #333;
     font-family: 'Poppins';
-    margin-bottom: 10px;
     text-align: justify;
     font-weight: 300;
 }
@@ -486,7 +485,6 @@
 .carousel-container {
   width: 100%;
   max-width: 700px;
-  margin: 2rem auto;
   display: flex;
   justify-content: center;
 }
@@ -495,7 +493,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: 12px;
-  margin-top: 0px;
+  margin-top: -10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -532,7 +530,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: -10px;
   background: white;
   padding: 10px;
   max-width: 450px;
@@ -545,8 +543,8 @@
   border-radius: 8px;
 }
 .carousel-frame {
-  margin-top: 15%;
   display: flex;
+  margin-top: -10px;
   justify-content: center;
   align-items: center;
 }
@@ -563,7 +561,7 @@
     max-width: 100%;
   }
   .carousel-frame {
-  margin-top: 0px;
+  margin-top: -10px;
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
@@ -596,4 +594,12 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   object-fit: contain;
+}
+.work-description-1 {
+  
+  text-align: center;
+}
+
+.work-sub-heading{
+  text-align: center;
 }
