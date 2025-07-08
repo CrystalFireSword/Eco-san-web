@@ -15,13 +15,14 @@
     width: 50%;
 }
 
-.work-heading {
-    color: #000000;
-    font-size: 7rem;
-    margin: -5px 0 10px 0;
-    font-family: 'Barlow Condensed';
-    text-align: left;
-    position: relative;
+.about-heading {
+  color: #5b818a;
+  font-size: 7rem;
+  margin-top: -5px;
+  font-family: 'Barlow Condensed';
+  margin-bottom: 10px;
+  text-align: left;
+  
 }
 
 .arrow-1 {
@@ -340,7 +341,7 @@
     }
     
     .work-heading {
-        font-size: 8vw;
+        font-size: 4.5 rem;
         text-align: center;
     }
     
@@ -438,7 +439,7 @@
 
 @media screen and (max-width: 480px) {
     .work-heading {
-        font-size: 9vw;
+        font-size: 3.5 rem;
     }
     
     .work-description-1,
@@ -550,7 +551,7 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .work-main-split {
     flex-direction: column;
     align-items: center;
