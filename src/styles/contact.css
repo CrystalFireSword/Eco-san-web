@@ -1,156 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .contact {
-    background-color: #fcfcfc;
-    color: black;
-    height: auto;
-    width: auto;
+  background-color: #bcfcff;
+  color: #5b818a;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-girl {
+  width: 40%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.contact-flex-right {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  padding: 0 1rem;
+}
+
+.contact-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 4rem;
+  color: #5b818a;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.one-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.mail-logo,
+.insta-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.one-line-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+.logo-contact {
+  width: 50%;
+  margin-top: 2rem;
+  object-fit: contain;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .contact-us-flex {
+    flex-direction: column-reverse;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
+    gap: 2rem;
   }
- 
-  .contact-us-flex{
-    display: flex;
-    
-  }
-  .contact-girl{
-    width: 40%;
+
+  .contact-girl {
+    width: 60vw;
     height: auto;
-    aspect-ratio: 1;
-
-  }
-  
-  .contact-flex-right{
-    position: relative; 
-    padding-left: 15%;
   }
 
-  .contact-title{
-    font-family: 'Barlow COndensed';
-    font-size: 100px;
-    color: #5b818a;
-    margin-bottom: 50px;
-    
+  .contact-flex-right {
+    text-align: center;
+    padding: 0;
   }
 
-  .one-line{
-    font-family: "Poppins";
-    display: flex;
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .one-line {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .mail-logo,
+  .insta-logo {
     width: 48px;
     height: 48px;
-    margin-bottom: 30px;
-    
-  }
-  .mail-logo{
-    width: 48px;
-    height: 48px;
-    flex: 0;
   }
 
-  .one-line-text{
-    position: relative;
-    margin-left: 5px;
-    align-self: center;
-    }
-
-  .insta-logo{
-    width: 48px;
-    height: 48px;
-    flex: 0;
-  }
-  .logo-contact{
-    width: 50%;
-    margin-left: 20px;    
+  .one-line-text {
+    font-size: 1rem;
   }
 
-  @media (max-width: 1200px){
-
-    .contact {
-      background-color: #fcfcfc;
-      color: black;
-      height: auto;
-      width: auto;
-      margin-bottom: 0px;
-      
-      
-    }
-   
-    .contact-us-flex{
-      display: flex;
-      flex-direction: column-reverse;
-      
-    }
-
-    .contact-girl{
-      width: 50vw;
-      height: 60vw;
-      aspect-ratio: 1;
-      align-self: center;
-            
-    }
-    
-    .contact-flex-right{      
-      position: relative;       
-      align-self: center;
-      padding-left: 0%;
-    }
-  
-    .contact-title{
-      font-family: 'Barlow COndensed';
-      font-size: 250%;
-      color: #5b818a;
-      margin-bottom: 50px;
-      align-self: center;
-      text-align: center;
-      margin-left: 20px;
-
-    }
-  
-    .one-line{
-      font-family: "Poppins";
-      display: flex;
-      width: 5vw;
-      height: 5vw;
-      margin-bottom: 30px;
-      text-align: center;
-      
-      
-    }
-
-    .mail-logo{
-      height: inherit;
-      width: inherit;
-      flex: 0;
-      margin-left: 25vw;
-    }
-  
-    .one-line-text{
-      position: relative;
-      margin-left: 5px;
-      align-self: center;
-      font-size: 2.5vw;
-      }
-  
-    .insta-logo{
-      height: inherit;
-      width: inherit;
-      flex: 0;
-      margin-left: 25vw;
-    }
-    .logo-contact {
-    width: 50%;
-    align-self: center;
-    margin-left: 25%;
+  .logo-contact {
+    width: 60%;
+    margin: 2rem auto 0;
   }
+}
 
-  }
-
-  
-
-  /* SCROLL ANIMATION CLASSES */
+/* Scroll animation classes */
 .scroll-fade {
   opacity: 0;
   transform: translateY(20px);
@@ -162,7 +120,6 @@
   transform: translateY(0);
 }
 
-/* Optional staggered delay */
 .animate-delay-1 {
   transition-delay: 0.2s;
 }
@@ -172,3 +129,34 @@
 .animate-delay-3 {
   transition-delay: 0.6s;
 }
+.contact a {
+  color: #5b818a;
+  text-decoration: underline; /* Optional: adds underline for visibility */
+}
+
+.contact a:hover {
+  color: #cccccc; /* Optional: subtle hover effect */
+}
+
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  flex: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.phone-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0;
+  color: #5b818a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

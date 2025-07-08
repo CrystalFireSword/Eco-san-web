@@ -28,6 +28,7 @@ const Navbar = () => {
         <li onClick={() => scrollToSection("home")}>Home</li>
         <li onClick={() => scrollToSection("about")}>About</li>
         <li onClick={() => scrollToSection("our-work")}>Our Work</li>
+        <li onClick={() => scrollToSection("supported-by")}>Supported By</li>
         <li>
           <Link to="/team" onClick={() => setIsOpen(false)}>
             Our Team

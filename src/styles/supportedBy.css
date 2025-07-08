@@ -1,0 +1,35 @@
+.supported-by-section {
+  background-color: #f5f3ee; /* soft beige */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.supported-by-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #000;
+}
+
+.supported-by-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.supported-by-logo-wrapper {
+  flex: 1 1 150px;
+  max-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supported-by-logo {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  object-fit: contain;
+}
