@@ -18,7 +18,7 @@ import indiaImage from "../assets/india_image_work.png";
 import transitionImage1 from "../assets/cross_bottom.png";
 // import aboutImage3 from "../assets/poly_left.png";
 // import aboutImage4 from "../assets/poly_right.png";
-import aboutImage5 from "../assets/our-process.jpeg";
+import aboutImage5 from "../assets/our-process-2.jpeg";
 
 const images = [
   galleryImage1,
