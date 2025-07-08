@@ -13,6 +13,7 @@ import galleryImage6 from "../assets/gallery_image_6.jpeg";
 import galleryImage7 from "../assets/gallery_image_7.jpeg";
 import galleryImage8 from "../assets/gallery_image_8.jpeg";
 import galleryImage9 from "../assets/gallery_image_9.jpeg";
+import indiaImage from "../assets/india_image_work.png";
 
 import transitionImage1 from "../assets/cross_bottom.png";
 // import aboutImage3 from "../assets/poly_left.png";
@@ -108,6 +109,9 @@ Take a glimpse into our creation process below, where science meets sustainabili
       {/* Process Section */}
       <div className="our-process-image-container scroll-fade animate-delay-2">
         <img src={aboutImage5} alt="Our Process" className="our-process-image" />
+      </div>
+      <div className="our-process-image-container scroll-fade animate-delay-2">
+        <img src={indiaImage} alt="India Image" className="our-process-image" />
       </div>
     </Section>
   );
