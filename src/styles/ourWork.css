@@ -17,7 +17,7 @@
 
 .work-heading {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
   color: #000;
@@ -339,7 +339,7 @@
     }
     
     .work-heading {
-        font-size: 3rem;
+        font-size: 4.5rem;
         text-align: center;
     }
     
@@ -437,7 +437,7 @@
 
 @media screen and (max-width: 480px) {
     .work-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     
     .work-description-1,
