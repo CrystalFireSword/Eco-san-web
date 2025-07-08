@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 768px) {
   .about-heading {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2vh;
   }
 
@@ -226,27 +226,3 @@
 .transition-image-1 {
   animation: fadeInZoom 1.4s ease-in-out;
 }
-
-@keyframes flyInUp {
-  from {
-    opacity: 0;
-    transform: translateY(80px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.scroll-fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.7s ease-out;
-}
-
-.animate-fade-up {
-  opacity: 1;
-  transform: translateY(0);
-  animation: flyInUp 1s ease-out forwards;
-}
-

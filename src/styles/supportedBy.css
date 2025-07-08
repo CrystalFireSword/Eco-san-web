@@ -5,13 +5,11 @@
 }
 
 .supported-by-heading {
-  color: #000000;
-  font-size: 7rem;
-  margin-top: -5px;
-  font-family: 'Barlow Condensed';
-  margin-bottom: 10px;
-  text-align: left;
-  
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #000;
 }
 
 .supported-by-logos {

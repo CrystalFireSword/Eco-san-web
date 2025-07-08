@@ -15,14 +15,13 @@
     width: 50%;
 }
 
-.about-heading {
-  color: #5b818a;
-  font-size: 7rem;
-  margin-top: -5px;
-  font-family: 'Barlow Condensed';
-  margin-bottom: 10px;
-  text-align: left;
-  
+.work-heading {
+    color: #000000;
+    font-size: 7rem;
+    margin: -5px 0 10px 0;
+    font-family: 'Barlow Condensed';
+    text-align: left;
+    position: relative;
 }
 
 .arrow-1 {
@@ -341,7 +340,7 @@
     }
     
     .work-heading {
-        font-size: 4.5 rem;
+        font-size: 8vw;
         text-align: center;
     }
     
@@ -439,7 +438,7 @@
 
 @media screen and (max-width: 480px) {
     .work-heading {
-        font-size: 3.5 rem;
+        font-size: 9vw;
     }
     
     .work-description-1,
@@ -551,7 +550,7 @@
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .work-main-split {
     flex-direction: column;
     align-items: center;
