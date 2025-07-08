@@ -9,7 +9,7 @@ import logo6 from "../assets/logo6.png";
 import logo7 from "../assets/logo7.jpeg";
 
 const SupportedBy = () => {
-  const logos = [logo1, logo3, logo4, logo5, logo6, logo7];
+  const logos = [logo4, logo1, logo3, logo5, logo6, logo7];
 
   return (
     <section id="supported-by" className="supported-by-section">
