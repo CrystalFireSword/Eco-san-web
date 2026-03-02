@@ -114,7 +114,7 @@ Take a glimpse into our creation process below, where science meets sustainabili
       <div className="our-process-image-container scroll-fade animate-delay-2">
         <img src={indiaImage} alt="India Image" className="our-process-image" />
       </div>
-      <h4 className="work-sub-heading">Reached 500+ girls in India and still counting!</h4>
+      <h4 className="work-sub-heading">Reached 500+ women across 7+ states in India, and still counting!</h4>
     </Section>
   );
 };
