@@ -6,10 +6,13 @@ import OurWork from "./sections/OurWork";
 import Contact from "./sections/Contact";
 import OurTeam from "./sections/OurTeam"; // still needed for the route
 import SupportedBy from "./sections/SupportedBy";
+import "./styles/animations.css";
+import ScrollToHash from "./utils/ScrollToHash";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToHash />
       <Navbar />
       <Routes>
         <Route

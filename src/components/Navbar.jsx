@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import "../styles.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const location = useLocation();
 
-  const scrollToSection = (id) => {
-    if (location.pathname !== "/") {
-      window.location.href = `/#${id}`; // Navigate to homepage and target section
-    } else {
+  const handleLinkClick = (id) => {
+    setIsOpen(false); // Close menu
+    
+    // If we're already on the homepage and trying to scroll to a section
+    if (location.pathname === "/") {
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      // If we're on another page, navigate to home with the hash
+      navigate(`/#${id}`);
     }
-    setIsOpen(false); // Close menu if open
   };
 
   const toggleMenu = () => {
@@ -25,16 +29,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-        <li onClick={() => scrollToSection("home")}>Home</li>
-        <li onClick={() => scrollToSection("about")}>About</li>
-        <li onClick={() => scrollToSection("our-work")}>Our Work</li>
-        <li onClick={() => scrollToSection("supported-by")}>Supported By</li>
+        <li onClick={() => handleLinkClick("home")}>Home</li>
+        <li onClick={() => handleLinkClick("about")}>About</li>
+        <li onClick={() => handleLinkClick("our-work")}>Our Work</li>
+        <li onClick={() => handleLinkClick("supported-by")}>Supported By</li>
         <li>
           <Link to="/team" onClick={() => setIsOpen(false)}>
             Our Team
           </Link>
         </li>
-        <li onClick={() => scrollToSection("contact")}>Contact Us</li>
+        <li onClick={() => handleLinkClick("contact")}>Contact Us</li>
       </ul>
       <button className="toggle-btn" onClick={toggleMenu}>
         &#9776;
