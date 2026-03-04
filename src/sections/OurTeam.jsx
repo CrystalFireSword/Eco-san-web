@@ -1,3 +1,4 @@
+import React from "react";
 import Section from "../components/Section";
 import "../styles/ourTeam.css";
 // import teamImage from "../assets/team-image.png";
@@ -9,25 +10,10 @@ import member2 from "../assets/member2.png";
 import member3 from "../assets/member3.png";
 import member4 from "../assets/member4.png";
 import member5 from "../assets/member5.png";
-import { useEffect } from "react";
+import useScrollAnimation from "../utils/useScrollAnimation";
 
 const OurTeam = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll(".scroll-fade");
-    elements.forEach(el => observer.observe(el));
-  }, []);
+  useScrollAnimation();
 
   return (
     <Section id="our-team" className="our-team scroll-fade">

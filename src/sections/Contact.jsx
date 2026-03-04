@@ -1,27 +1,13 @@
-import { useEffect } from "react";
+import React from "react";
 import Section from "../components/Section";
 import "../styles/contact.css";
 import contactGirl from "../assets/contact_girl_img.png";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
+import useScrollAnimation from "../utils/useScrollAnimation";
 
 const Contact = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const animatedElements = document.querySelectorAll(".scroll-fade");
-    animatedElements.forEach(el => observer.observe(el));
-  }, []);
+  useScrollAnimation();
 
   return (
     <Section id="contact" className="contact scroll-fade">
