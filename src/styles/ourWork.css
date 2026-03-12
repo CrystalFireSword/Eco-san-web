@@ -482,27 +482,87 @@
     }
 }
 
-.carousel-container {
-  width: 100%;
-  max-width: 700px;
-  display: flex;
-  justify-content: center;
-}
-
+/* Consolidated Carousel Styles */
 .carousel-frame {
   width: 100%;
-  aspect-ratio: 4 / 3;
   border-radius: 12px;
-  margin-top: -10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #fedae4; /* Theme Pink */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-content-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  background: n;
+  background: #fedae4;
 }
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.carousel-control:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-control.prev { left: 10px; }
+.carousel-control.next { right: 10px; }
+
+.carousel-caption {
+  color: white !important; /* Ensure it's white on pink */
+}
+
+/* Special Feature Specific */
+.feature-carousel {
+  max-width: 900px;
+}
+
+.feature-carousel .carousel-image {
+  max-height: 70vh; /* Scalable with viewport */
+}
+
+@media (max-width: 768px) {
+  .carousel-frame {
+    padding: 8px;
+    max-width: 100%;
+  }
+  
+  .feature-carousel .carousel-image {
+    max-height: 50vh;
+  }
+}
+
 .work-main-split {
   display: flex;
   justify-content: space-between;
@@ -510,69 +570,6 @@
   gap: 3rem;
   margin-top: 2rem;
   flex-wrap: wrap;
-}
-
-.work-left-text {
-  flex: 1 1 55%;
-  color: #000;
-}
-
-.work-sub-heading {
-  font-size: 2rem;
-  font-family: 'Poppins';
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #000;
-}
-
-.carousel-frame {
-  flex: 1 1 40%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: -10px;
-  background: white;
-  padding: 10px;
-  max-width: 450px;
-}
-
-.carousel-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.carousel-frame {
-  display: flex;
-  margin-top: -10px;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .work-main-split {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .work-left-text, .carousel-frame {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-  .carousel-frame {
-  margin-top: -10px;
-  margin-bottom: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-}
-.carousel-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 .vertical-highlight-image-container {
   display: flex;

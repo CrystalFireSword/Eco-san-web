@@ -20,6 +20,12 @@ import indiaImage from "../assets/india_image_work.png";
 import transitionImage1 from "../assets/cross_bottom.png";
 import aboutImage5 from "../assets/our-process-2.jpeg";
 
+// Feature Images
+import featBI from "../assets/feature/feat_bi.jpeg";
+import featDNN from "../assets/feature/feat_dnn24.jpeg";
+import featGoodNews from "../assets/feature/feat_good_news.jpeg";
+import featTOI from "../assets/feature/feat_toi.jpeg";
+
 const images = [
   galleryImage1,
   galleryImage2,
@@ -30,6 +36,13 @@ const images = [
   galleryImage7,
   galleryImage8,
   galleryImage9
+];
+
+const featureItems = [
+  { src: featBI, source: "The Better India", link: "https://share.google/images/phw5FIUMfAEbQ4Jjg" },
+  { src: featDNN, source: "DNN24", link: "#" },
+  { src: featGoodNews, source: "Good News Network", link: "#" },
+  { src: featTOI, source: "Times of India", link: "#" }
 ];
 
 const OurWork = () => {
@@ -82,6 +95,13 @@ const OurWork = () => {
         <img src={indiaImage} alt="India Image" className="our-process-image" />
       </div>
       <h4 className="work-sub-heading">Reached 500+ women across 7+ states in India, and still counting!</h4>
+
+      <div className="special-feature-section scroll-fade animate-delay-1" style={{ marginTop: "4rem", textAlign: "center" }}>
+        <h3 className="work-heading">Special Feature</h3>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Carousel items={featureItems} className="feature-carousel scroll-fade animate-delay-2" />
+        </div>
+      </div>
     </Section>
   );
 };
